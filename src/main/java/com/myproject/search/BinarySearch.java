@@ -5,6 +5,17 @@ package com.myproject.search;
  */
 public class BinarySearch {
 
+    /**
+     * Binary Search is an efficient algorithm used to find a target element in a sorted array.
+     * The algorithm divides the array into two halves, compares the middle element with the target, and then decides which half to search next.
+     * The time complexity is O(log n). The array must be sorted.
+     *
+     * @param array (must be sorted)
+     * @param value (no restrictions)
+     * @return value or -1
+     */
+
+
     public static int binarySearchRec(int[] array, int value) {
         return binarySearchRec(array, value, 0, array.length - 1);
     }
@@ -17,7 +28,7 @@ public class BinarySearch {
         int middle = (left + right) / 2;
 
         if (array[middle] == number)
-            return middle;
+            return array[middle];
 
         if (number > array[middle]) {
             return binarySearchRec(array, number, middle + 1, right);
@@ -36,7 +47,7 @@ public class BinarySearch {
         while (true) {
 
             if (array[middle] == value)
-                return middle;
+                return array[middle];
 
             if (value < array[middle])
                 right = middle - 1;
