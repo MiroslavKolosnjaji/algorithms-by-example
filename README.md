@@ -38,7 +38,7 @@ These activities provided practical experience in addressing common string chall
 
 ### String manipulation
 
-[![StringUtils](https://img.shields.io/badge/LinearSearch-%23FF5733?style=for-the-badge&logo=github)](https://github.com/MiroslavKolosnjaji/algorithms-by-example/blob/main/src/main/java/com/myproject/string/StringUtils.java)
+[![StringUtils](https://img.shields.io/badge/StringUtils-%23FF5733?style=for-the-badge&logo=github)](https://github.com/MiroslavKolosnjaji/algorithms-by-example/blob/main/src/main/java/com/myproject/string/StringUtils.java)
 
 
 ## License
