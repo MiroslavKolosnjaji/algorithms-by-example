@@ -36,6 +36,11 @@ These activities provided practical experience in addressing common string chall
 [![ExponentialSearch](https://img.shields.io/badge/ExponentialSearch-%23581845?style=for-the-badge&logo=github)](https://github.com/MiroslavKolosnjaji/algorithms-by-example/blob/main/src/main/java/com/myproject/search/ExponentialSearch.java)
 [![TernarySearch](https://img.shields.io/badge/TernarySearch-%231A5276?style=for-the-badge&logo=github)](https://github.com/MiroslavKolosnjaji/algorithms-by-example/blob/main/src/main/java/com/myproject/search/TernarySearch.java)
 
+### String manipulation
+
+[![StringUtils](https://img.shields.io/badge/LinearSearch-%23FF5733?style=for-the-badge&logo=github)](https://github.com/MiroslavKolosnjaji/algorithms-by-example/blob/main/src/main/java/com/myproject/string/StringUtils.java)
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
