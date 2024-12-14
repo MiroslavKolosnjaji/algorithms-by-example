@@ -7,20 +7,14 @@
 
 # algorithms-by-example
 
-This project contains my implementations of sorting and searching algorithms, as well as string manipulation exercises,
-based on the 'Data Structures 3' course from Code with Mosh.
-Initially, all algorithms were implemented within a single class, but to improve organization and readability, I
-refactored the code and separated each algorithm into its own class.
+This project includes implementations of sorting and searching algorithms, as well as string manipulation tasks, based on the 'Data Structures 3' course from Code with Mosh.
+The code was refactored from a single class into individual classes to improve organization and readability.
 
-The solutions are a result of solving hands-on exercises that emphasized algorithm design, problem-solving, and
-optimization.
-I focused on developing efficient solutions and improving problem-solving skills by tackling each algorithm
-independently before reviewing the instructor's solutions.
+The exercises focused on algorithm design, problem-solving, and optimization.
+Each algorithm was approached independently to develop efficient solutions, followed by a review of the instructor's solutions for comparison and refinement.
 
-In addition to the algorithms, I worked on several string manipulation tasks, such as reversing strings, checking for
-palindromes, and determining if two strings are anagrams.
-These exercises enhanced my understanding of string operations and gave me a deeper insight into problem-solving
-strategies for common string challenges.
+String manipulation tasks included reversing strings, checking for palindromes, determining if two strings are anagrams, and many others.
+These activities provided practical experience in addressing common string challenges and designing clear, effective solutions.
 
 ### Sorting Algorithms
 
