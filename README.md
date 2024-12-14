@@ -10,6 +10,8 @@
 This project includes implementations of sorting and searching algorithms, as well as string manipulation tasks, based on the 'Data Structures 3' course from Code with Mosh.
 The code was refactored from a single class into individual classes to improve organization and readability.
 
+To enhance code quality, unit tests are being written retroactively to ensure the correctness and reliability of all implemented methods.
+
 The exercises focused on algorithm design, problem-solving, and optimization.
 Each algorithm was approached independently to develop efficient solutions, followed by a review of the instructor's solutions for comparison and refinement.
 
