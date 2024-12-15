@@ -47,7 +47,7 @@ public class StringUtils {
     }
 
     public static boolean isRotation(String word1, String word2) {
-        return (word1.length() != word2.length()) && (word1 + word2).contains(word2);
+        return (word1.length() == word2.length()) && (word1 + word1).contains(word2);
     }
 
     public static String removeDuplicates(String word) {
@@ -76,25 +76,46 @@ public class StringUtils {
 
         Map<Character, Integer> map = new HashMap<>();
         int counter;
+
+        Character c = null;
+        int counter2 = 0;
+
         for (var ch : word.toCharArray()) {
             counter = 1;
 
-            if (!map.containsKey(ch))
+            if (ch == ' ') continue;
+
+            if (!map.containsKey(ch)) {
                 map.put(ch, counter);
+                continue;
+            }
 
             counter = map.get(ch);
             map.replace(ch, ++counter);
+
+            if (counter2 < counter) {
+                c = ch;
+                counter2 = counter;
+            }
         }
-        return 'A';
+
+        System.out.println(map);
+        return c;
     }
 
     public static String capitalizeFirstLetter(String sentence) {
+
+        if(sentence == null || sentence.isEmpty())
+            return "";
+
         String[] words = sentence.trim().split(" ");
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < words.length; i++) {
-            if (!words[i].isEmpty()) {
-                sb.append(words[i].substring(0, 1).toUpperCase().concat(words[i].substring(2).toLowerCase()) + " ");
+            if (!(words[i].isEmpty()) && !(words[i].length() == 1)) {
+                sb.append(words[i].substring(0, 1).toUpperCase().concat(words[i].substring(1).toLowerCase())).append(" ");
+            } else  {
+                sb.append(words[i].substring(0, 1).toUpperCase()).append(" ");
             }
         }
 
@@ -109,12 +130,14 @@ public class StringUtils {
         if (str2 == null || str2.isEmpty())
             throw new IllegalArgumentException();
 
+        if(str1.length() != str2.length())
+            return false;
 
         Set<Character> set = new HashSet<>();
-        for (var ch : str1.toCharArray())
+        for (var ch : str1.toLowerCase().toCharArray())
             set.add(ch);
 
-        for (var ch : str2.toCharArray())
+        for (var ch : str2.toLowerCase().toCharArray())
             if (!set.contains(ch))
                 return false;
 
