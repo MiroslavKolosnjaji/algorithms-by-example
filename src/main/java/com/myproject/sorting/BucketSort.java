@@ -9,7 +9,7 @@ import java.util.LinkedList;
 public class BucketSort {
 
     public static int[] bucketSort(int[] array){
-        LinkedList<Integer>[] list = new LinkedList[5];
+        LinkedList<Integer>[] list = new LinkedList[array.length];
         for (int i = 0; i < array.length; i++) {
             var index = array[i] / list.length;
 
@@ -20,6 +20,9 @@ public class BucketSort {
         }
 
         for (int i = 0; i < list.length; i++) {
+
+            if(list[i] == null) continue;
+
             Collections.sort(list[i]);
         }
 
