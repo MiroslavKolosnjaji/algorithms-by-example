@@ -6,18 +6,18 @@ package com.myproject.sorting;
 public class InsertionSort {
 
     public static int[] insertionSort(int[] array) {
+
         int current;
-        int index = 0;
+
         for (int i = 0; i < array.length; i++) {
             current = array[i];
 
             for (int j = i; j >= 0; j--) {
                 if (array[j] > current) {
                     array[j + 1] = array[j];
-                    index = j;
+                    array[j] = current;
                 }
             }
-            array[index] = current;
         }
         return array;
     }
