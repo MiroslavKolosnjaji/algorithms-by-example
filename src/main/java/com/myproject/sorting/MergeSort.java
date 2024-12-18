@@ -19,12 +19,17 @@ public class MergeSort {
         int counter = 0;
         for (int i = 0; i < first.length; i++) {
             for (int j = counter; j < second.length; j++) {
-                if (!(first[i] > second[j])) break;
+
+                if (!(first[i] > second[j])) continue;
+
                 array[index++] = second[j];
-                counter += 1;
+                counter++;
             }
             array[index++] = first[i];
         }
+
+
+
         return array;
     }
 }
