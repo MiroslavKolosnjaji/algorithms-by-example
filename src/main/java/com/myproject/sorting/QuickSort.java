@@ -13,7 +13,7 @@ public class QuickSort {
 
         int boundary = -1;
         for (int i = 0; i < array.length; i++) {
-            if (pivot >= array[i]) {
+            if (array[i] <= pivot) {
                 var temp = array[++boundary];
                 array[boundary] = array[i];
                 array[i] = temp;
